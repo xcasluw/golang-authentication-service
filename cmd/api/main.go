@@ -43,8 +43,6 @@ func main() {
 		Handler: app.routes(),
 	}
 
-	log.Printf("uuu", srv)
-
 	err := srv.ListenAndServe()
 	if err != nil {
 		log.Panic(err)
